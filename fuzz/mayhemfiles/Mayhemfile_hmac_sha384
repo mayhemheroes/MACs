@@ -1,0 +1,7 @@
+project: MACs
+target: hmac_sha384
+duration: 90
+
+cmds:
+    - cmd: /hmac_sha384
+
