@@ -3,7 +3,6 @@ use libfuzzer_sys::fuzz_target;
 use hmac::{Hmac, Mac};
 use sha2::Sha256;
 
-// TODO: add docs about arbitrary
 fuzz_target!(|input: (&[u8], &[u8])| {
     let (key, data) = input;
     type HmacSha256 = Hmac<Sha256>;
